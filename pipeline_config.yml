@@ -1,0 +1,7 @@
+nodes:
+- input.visual:
+    source: 0
+    mirror_image: True
+#    source: https://storage.googleapis.com/peekingduck/videos/wave.mp4
+- custom_nodes.model.hand_pose
+- output.screen
