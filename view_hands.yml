@@ -1,0 +1,9 @@
+nodes:
+- input.visual:
+    source: 0
+    mirror_image: True
+- custom_nodes.dabble.hand_view
+- dabble.fps
+- draw.legend:
+    show: ["fps"]
+- output.screen

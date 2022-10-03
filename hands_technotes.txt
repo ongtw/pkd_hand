@@ -1,0 +1,95 @@
+Hands
+=====
+
+SQL fields:
+-----------
+insert into hands (gesture_id, x_0, y_0, x_1, y_1, x_2, y_2, x_3, y_3, x_4, y_4, x_5, y_5, x_6, y_6, x_7, y_7, x_8, y_8, x_9, y_9, x_10, y_10, x_11, y_11, x_12, y_12, x_13, y_13, x_14, y_14, x_15, y_15, x_16, y_16, x_17, y_17, x_18, y_18, x_19, y_19, x_20, y_20)
+values (...)
+
+
+
+Gestures Map
+============
+* capture front and back
+        0: closed fist
+        1: one-finger up
+        2: two-fingers up
+        3: three-fingers up
+        4: four-fingers up
+        5: five-fingers up
+        6: thumb + pinky up
+        7: thumb + forefinger up
+        8: thumb + forefinger + middle finger up
+        9:
+    a   10:
+    b   11:
+    c   12:
+    d   13:
+    e   14:
+    f   15:
+    g   16:
+    h   17:
+    i   18:
+    j   19:
+    k   20:
+    l   21:
+    m   22:
+    n   23:
+    o   24:
+    p   25:
+    q   26:
+    r   27:
+    s   28:
+    t   29:
+
+
+opencv drawing functions
+========================
+
+
+LINETYPES
+---------
+    cv2.FILLED
+    cv2.LINE_4
+    cv2.LINE_8
+    cv2.LINE_AA
+
+
+Line
+----
+    cv2.line(img, (x1,y1), (x2,y2), (b,g,r), thickness, line_type)
+
+    x1,y1   start point
+    x2,y2   end point
+
+
+Rectangle
+---------
+    cv2.rectangle(img, (x1,y1), (x2,y2), (b,g,r), thickness, line_type)
+
+    x1,y1   top-left corner
+    x2,y2   bottom-right corner
+
+
+Circle
+------
+    cv2.circle(img, (x1,y1), radius, (b,g,r), thickness, line_type)
+
+    x1,y1   center point
+    thickness == -1     fill entire circle, cv2.FILLED
+
+
+Ellipse
+-------
+    cv2.ellipse(
+        img, (x1,y1), (major_axis_len, minor_axis_len), angle_of_rotation, start_angle, end_angle,
+        (b,g,r), thickness, line_type
+    )
+
+
+Text
+----
+    cv2.putText(img, text, (x,y), font, size, (b,g,r), thickness, line_type)
+
+
+
