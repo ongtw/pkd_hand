@@ -103,7 +103,7 @@ class Node(AbstractNode):
         y: int,
         text: str,
         bgr: tuple = (255, 255, 255),
-        size: float = 1.0,
+        scale: float = 1.0,
         thickness: int = 2,
         countdown: int = 10,
     ):
@@ -114,7 +114,7 @@ class Node(AbstractNode):
             y=y,
             text=text,
             bgr=bgr,
-            size=size,
+            scale=scale,
             thickness=thickness,
         )
 

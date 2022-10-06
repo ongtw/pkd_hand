@@ -147,12 +147,12 @@ def draw_text(
     y: int,
     text: str,
     bgr: tuple = (255, 255, 255),
-    size: float = 1.0,
+    scale: float = 1.0,
     thickness: int = 2,
 ):
     font = cv2.FONT_HERSHEY_SIMPLEX
     line = cv2.LINE_AA
-    cv2.putText(img, text, Point(x, y), font, size, bgr, thickness, line)
+    cv2.putText(img, text, Point(x, y), font, scale, bgr, thickness, line)
 
 
 ####################

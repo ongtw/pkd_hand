@@ -28,7 +28,7 @@ from hand import connect_db
 BATCH_SIZE = 64
 LEARNING_RATE = 0.001
 NUM_EPOCHS = 1000
-NUM_GESTURES = 9
+NUM_GESTURES = 10
 PATIENCE = 50
 MODEL_SAVE_PATH = "hand_gesture_classifier.hdf5"
 RAND_SEED = 314159
