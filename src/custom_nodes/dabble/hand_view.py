@@ -9,8 +9,8 @@ import itertools
 from peekingduck.pipeline.nodes.abstract_node import AbstractNode
 from hand import (
     HANDS_DB,
-    _BLUE,
-    _WHITE,
+    BLUE,
+    WHITE,
     draw_hand,
     connect_db,
     read_hand_catalog,
@@ -72,7 +72,7 @@ class MyButton:
         )
         x = self.x + (self.w - text_width) / 2
         y = self.y2 - (self.h - text_height) / 2  # align text base
-        draw_text(img, x, y, self.label, _WHITE)
+        draw_text(img, x, y, self.label, WHITE)
 
     def is_clicked(self, x: int, y: int) -> bool:
         return not (x < self.x or x > self.x2 or y < self.y or y > self.y2)
@@ -172,7 +172,7 @@ class Node(AbstractNode):
             BTN_WIDTH,
             BTN_HEIGHT,
             "<-",
-            _BLUE,
+            BLUE,
             self.btn_prev_10x_cb,
         )
         btn_prev = MyButton(
@@ -181,7 +181,7 @@ class Node(AbstractNode):
             BTN_WIDTH,
             BTN_HEIGHT,
             "<-",
-            _BLUE,
+            BLUE,
             self.btn_prev_cb,
         )
         btn_next = MyButton(
@@ -190,7 +190,7 @@ class Node(AbstractNode):
             BTN_WIDTH,
             BTN_HEIGHT,
             "->",
-            _BLUE,
+            BLUE,
             self.btn_next_cb,
         )
         btn_next_10x = MyButton(
@@ -199,7 +199,7 @@ class Node(AbstractNode):
             BTN_WIDTH,
             BTN_HEIGHT,
             "->",
-            _BLUE,
+            BLUE,
             self.btn_next_10x_cb,
         )
         btn_auto = MyButton(
@@ -208,7 +208,7 @@ class Node(AbstractNode):
             BTN_WIDTH,
             BTN_HEIGHT,
             "Auto",
-            _BLUE,
+            BLUE,
             self.btn_auto_cb,
         )
         self.buttons = {

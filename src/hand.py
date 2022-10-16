@@ -67,15 +67,15 @@ PINKY_DIP = 19
 PINKY_TIP = 20
 
 # COLORS
-_WHITE = (255, 255, 255)
-_BLACK = (0, 0, 0)
-_GRAY = (128, 128, 128)
-_RED = (0, 0, 255)
-_GREEN = (0, 255, 0)
-_BLUE = (255, 0, 0)
-_YELLOW = (0, 255, 255)
-_ORANGE = (0, 140, 238)
-_PURPLE = (128, 0, 128)
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+GRAY = (128, 128, 128)
+RED = (0, 0, 255)
+GREEN = (0, 225, 0)
+BLUE = (255, 0, 0)
+YELLOW = (0, 255, 255)
+ORANGE = (0, 140, 238)
+PURPLE = (128, 0, 128)
 
 
 ####################
@@ -293,16 +293,16 @@ def draw_hand(image, landmark_points):
     if len(landmark_points) == 0:
         return
 
-    col_palm = _GRAY
-    col_fin_thumb = _RED
-    col_fin_index = _PURPLE
-    col_fin_middle = _GREEN
-    col_fin_ring = _ORANGE
-    col_fin_pinky = _BLUE
+    col_palm = GRAY
+    col_fin_thumb = RED
+    col_fin_index = PURPLE
+    col_fin_middle = GREEN
+    col_fin_ring = ORANGE
+    col_fin_pinky = BLUE
 
     # fmt: off
     # skeletal structure
-    outline_color = _WHITE
+    outline_color = WHITE
     # thumb
     _color = col_fin_thumb
     cv2.line(image, tuple(landmark_points[2]), tuple(landmark_points[3]), outline_color, 6)
@@ -364,7 +364,7 @@ def draw_hand(image, landmark_points):
     cv2.line(image, tuple(landmark_points[17]), tuple(landmark_points[0]), _color, 2)
 
     # keypoints
-    outline_color = _WHITE
+    outline_color = WHITE
     big_dot = 8
     small_dot = 5
     for index, landmark in enumerate(landmark_points):
