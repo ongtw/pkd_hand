@@ -41,3 +41,10 @@ Pipeline Files
 `capture_hands.yml` <br>
 `inference_hands.yml` <br>
 `view_hands.yml`
+
+
+
+Jira Integration
+================
+
+New note to test Jira integration.
