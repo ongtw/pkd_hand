@@ -48,3 +48,5 @@ Jira Integration
 ================
 
 New note to test Jira integration.
+
+New note to test with Jira issue keys.
